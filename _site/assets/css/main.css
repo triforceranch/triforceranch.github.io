@@ -274,7 +274,7 @@ pre code { background-color: transparent; color: inherit; font-size: 100%; paddi
 .highlight .lineno { color: #999; display: inline-block; padding-left: 0.25rem; padding-right: 0.75rem; user-select: none; }
 
 /* Layout Styles for managing the structural hierarchy of the site. Hydeout features the large colored sidebar from Hyde that houses the site name, intro, and "footer" content. Sidebar is on top of content on mobile and expands into sidebar on larger width displays. Sidebar CSS assumes HTML looks like this for post pages: body > #sidebar > header (primary sidebar content -- i.e. title) > h1 (home page only, otherwise div or span) > secondary nav content we may want to hide on certain pages > .container > h1 (non-home page) > .content Basic approach is to color in body, make sidebar background transparent, and then fill in the .container or .content elements depending on how far we want the sidebar or header to stretch. */
-body { background-attachment: fixed; background-color: #c5d6bc; background-image: linear-gradient(to bottom, #d8e4d2, #b2c8a6); color: rgba(67, 68, 51, 0.75); display: flex; flex-direction: column; min-height: 100vh; }
+body { background-attachment: fixed; background-color: #9dab96; background-image: linear-gradient(to bottom, #b0bbaa, #8a9b82); color: rgba(67, 68, 51, 0.75); display: flex; flex-direction: column; min-height: 100vh; }
 
 #sidebar { flex: 0 0 auto; padding: 2rem; }
 
@@ -282,7 +282,7 @@ body { background-attachment: fixed; background-color: #c5d6bc; background-image
 
 #sidebar .site-title .back-arrow { margin-right: 0.5rem; }
 
-.content { background: #fff; color: #515151; padding: 2rem; }
+.content { background: #d6e2d0; color: #515151; padding: 2rem; }
 
 .container { display: flex; flex: 1 1 auto; flex-direction: column; }
 
@@ -309,7 +309,7 @@ body { background-attachment: fixed; background-color: #c5d6bc; background-image
 .home #sidebar > *:last-child { margin-bottom: 0.5rem; }
 
 /* ----------------------------------------------------------- Tablet / Desktop view ----------------------------------------------------------- */
-@media (min-width: 49rem) { body { flex-direction: row; min-height: 100vh; -webkit-overflow-scrolling: touch; overflow-y: auto; } body > * { -webkit-overflow-scrolling: touch; overflow-y: auto; } /* Undo mobile CSS */ #sidebar, .home #sidebar { text-align: left; width: 18rem; } #sidebar > *:last-child, .home #sidebar > *:last-child { margin-bottom: 0; } #sidebar { position: fixed; bottom: 0; right: 0; } #sidebar .site-title { font-size: 3.25rem; } #sidebar .site-title .back-arrow { display: none; } #sidebar p.lead, #sidebar header ~ * { display: block; } #sidebar header ~ nav { display: flex; } .index #sidebar { margin-bottom: 0; } .container { background: #fff; color: #515151; min-height: 100vh; padding: 4rem 4rem 0; margin-right: 18rem; } .container > header { color: #313131; margin: 0; } .container > header h1, .container > header h2 { color: inherit; } .container > header h1:last-child, .container > header h2:last-child { margin-bottom: 0.5rem; } .container > * { max-width: 38rem; padding: 0; } }
+@media (min-width: 49rem) { body { flex-direction: row; min-height: 100vh; -webkit-overflow-scrolling: touch; overflow-y: auto; } body > * { -webkit-overflow-scrolling: touch; overflow-y: auto; } /* Undo mobile CSS */ #sidebar, .home #sidebar { text-align: left; width: 18rem; } #sidebar > *:last-child, .home #sidebar > *:last-child { margin-bottom: 0; } #sidebar { position: fixed; bottom: 0; right: 0; } #sidebar .site-title { font-size: 3.25rem; } #sidebar .site-title .back-arrow { display: none; } #sidebar p.lead, #sidebar header ~ * { display: block; } #sidebar header ~ nav { display: flex; } .index #sidebar { margin-bottom: 0; } .container { background: #d6e2d0; color: #515151; min-height: 100vh; padding: 4rem 4rem 0; margin-right: 18rem; } .container > header { color: #313131; margin: 0; } .container > header h1, .container > header h2 { color: inherit; } .container > header h1:last-child, .container > header h2:last-child { margin-bottom: 0.5rem; } .container > * { max-width: 38rem; padding: 0; } }
 
 /* ----------------------------------------------------------- Sidebar links + nav ----------------------------------------------------------- */
 #sidebar a { color: #434433; }
@@ -387,7 +387,7 @@ button.disqus-load { margin-top: 1em; }
 /* Pagination Super lightweight (HTML-wise) blog pagination. Should only be visible when there is navigation available -- single buttons at top or bottom of each page. */
 .pagination { color: #ccc; margin-bottom: 2rem; text-align: center; }
 
-.pagination > a { background: #fff; border: solid #e5e5e5; border-radius: 300px; border-width: 1px; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); display: inline-block; max-width: 18rem; padding: 1em 1.5em; width: 60%; }
+.pagination > a { background: #d6e2d0; border: solid #e5e5e5; border-radius: 300px; border-width: 1px; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); display: inline-block; max-width: 18rem; padding: 1em 1.5em; width: 60%; }
 
 .pagination > a:hover { background-color: #e5e5e5; }
 
